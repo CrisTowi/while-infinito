@@ -14,7 +14,7 @@ import { rhythm } from "../utils/typography"
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/profile-pic-2.jpg/" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
@@ -33,6 +33,8 @@ const Bio = () => {
   `)
 
   const { author, social } = data.site.siteMetadata
+
+
   return (
     <div
       style={{
@@ -54,12 +56,11 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
+        El blog de <strong>{author}</strong> donde hablamos de programación, tecnología y temas frikis.
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
+        <p>También puedes encontrarme en Twitter como
+          <a target="_blank" href={`https://twitter.com/${social.twitter}`}> @Cris_Towi</a>
+        </p>
       </p>
     </div>
   )
