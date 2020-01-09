@@ -12,29 +12,6 @@ import Image from "gatsby-image"
 import { rhythm } from "../utils/typography"
 
 const Bio = () => {
-  const data = useStaticQuery(graphql`
-    query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic-2.jpg/" }) {
-        childImageSharp {
-          fixed(width: 50, height: 50) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      site {
-        siteMetadata {
-          author
-          social {
-            twitter
-          }
-        }
-      }
-    }
-  `)
-
-  const { author, social } = data.site.siteMetadata
-
-
   return (
     <div
       style={{
@@ -42,25 +19,8 @@ const Bio = () => {
         marginBottom: rhythm(2.5),
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author}
-        style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
       <p>
-        El blog de <strong>{author}</strong> donde hablamos de programación, tecnología y temas frikis.
-        {` `}
-        <p>También puedes encontrarme en Twitter como
-          <a target="_blank" href={`https://twitter.com/${social.twitter}`}> @Cris_Towi</a>
-        </p>
+        El sitio donde hablamos de programación, tecnología es ideas nuevas que pasen por mi cabeza.
       </p>
     </div>
   )

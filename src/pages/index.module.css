@@ -1,0 +1,32 @@
+.postContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-bottom: 25px;
+}
+
+.post {
+  width: 400px;
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.postTitle {
+  margin: 0px;
+  color: black;
+  font-size: 18px;
+}
+
+.postDate {
+  font-size: 12px;
+  color: gray;
+}
+
+.postDescription {
+  margin-top: 12px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: black;
+}

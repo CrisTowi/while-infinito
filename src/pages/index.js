@@ -6,38 +6,44 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
+import containerStyles from "./index.module.css"
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
+    console.log(posts);
+
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="Todas las publicaciones" />
         <Bio />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
+        <section className={containerStyles.postContainer}>
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug
+            return (
+              <article className={containerStyles.post} key={node.fields.slug}>
+                <Link to={node.fields.slug} style={{
+                    boxShadow: 'none',
+                    textDecoration: 'none' }}>
+                  <h3 className={containerStyles.postTitle}>
+                    {title}
+                  </h3>
+                  <small className={containerStyles.postDate}>
+                    {node.frontmatter.date}
+                  </small>
+                  <p className={containerStyles.postDescription}
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || node.excerpt,
+                    }}
+                    />
                 </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </div>
-          )
-        })}
+              </article>
+            )
+          })}
+        </section>
       </Layout>
     )
   }
