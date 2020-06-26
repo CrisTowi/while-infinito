@@ -1,0 +1,36 @@
+.bio-container {
+  display: flex;
+  margin-top: 56px;
+}
+
+.bio-info-container {
+  width: 50%;
+}
+
+.main-info {
+  display: flex;
+}
+
+.main-info img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+.bio-contact {
+  margin-left: 20px;
+  width: calc(100% - 140px);
+}
+
+.bio-contact p {
+  margin-top: 35px;
+  font-size: 18px;
+  color: #181818;
+  font-weight: 300;
+}
+
+.bio-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #75BFA6;
+}
