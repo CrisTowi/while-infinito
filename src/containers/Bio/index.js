@@ -27,7 +27,7 @@ const Bio = () => {
           <p>
           I am a Software Engineer mostly focused on building Web Applications using Javascript as my favorite programming language. I enjoy learning and sharing knowledge with people around communities. I also like solving coding problems using Python and AWS cloud architecture experimentation. I love to solve problems and build great things that can impact other people's lives.
           </p>
-          <p><a className="bio-link" href="www.linkedin.com/in/cconsuelo" target="_blank">www.linkedin.com/in/cconsuelo</a></p>
+          <p><a className="bio-link" href="https://linkedin.com/in/cconsuelo" target="_blank">www.linkedin.com/in/cconsuelo</a></p>
           <p><a className="bio-link" href="mailto:christian.consuelo2@gmail.com">christian.consuelo2@gmail.com</a></p>
           <p>Wanna see my Resume? <a className="bio-link" href="https://while-infinito-entries.s3.amazonaws.com/Christian_Consuelo_resume_2020.pdf" target="_blank">Take a look</a></p>
         </div>
