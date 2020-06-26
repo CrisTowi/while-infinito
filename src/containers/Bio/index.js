@@ -5,7 +5,7 @@ import React from 'react';
 import './index.css';
 
 // Assets
-import chris from '../../../public/chris.jpg';
+import chris from '../../../static/chris.jpg';
 
 const Bio = () => {
   return (
@@ -25,7 +25,7 @@ const Bio = () => {
         <div className="secondary-info">
           <h3>Hi everyone, I’m Christian Consuelo!</h3>
           <p>
-            Ever dream of changing the world or making a difference? You are invited to roll up your sleeves and join a group of entrepreneurs on a journey to change lives by changing systems. Built from Acumen’s years of experience investing in social entrepreneurs, this course will also feature firsthand stories and advice from 4 inspiring founders:
+          I am a Software Engineer mostly focused on building Web Applications using Javascript as my favorite programming language. I enjoy learning and sharing knowledge with people around communities. I also like solving coding problems using Python and AWS cloud architecture experimentation. I love to solve problems and build great things that can impact other people's lives.
           </p>
           <p><a className="bio-link" href="www.linkedin.com/in/cconsuelo" target="_blank">www.linkedin.com/in/cconsuelo</a></p>
           <p><a className="bio-link" href="mailto:christian.consuelo2@gmail.com">christian.consuelo2@gmail.com</a></p>

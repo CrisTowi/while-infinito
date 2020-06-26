@@ -11,7 +11,8 @@ const PageTitle = () => {
         <p>Mint<span>&</span>Fresh</p>
       </div>
       <div className="page-summary">
-        Ever dream of changing the world or making a difference? You are invited to roll up your sleeves and join a group of entrepreneurs on a journey to change lives by changing systems.
+        <p>"La humanidad necesita gente sabia, no rica. La diferencia radica en que cuando se parte, un billete se parte, pero una idea se multiplica"</p>
+        <p>-Danger AK</p>
       </div>
     </>
   );
