@@ -3,7 +3,7 @@ import React from 'react';
 
 // Components
 import Entry from '../../components/Entry';
-import Tag from '../../components/Tag';
+// import Tag from '../../components/Tag';
 
 // Styles
 import './index.css';

@@ -9,8 +9,7 @@ import './index.css';
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
+    const { children } = this.props;
 
     return (
       <div className="Layout">

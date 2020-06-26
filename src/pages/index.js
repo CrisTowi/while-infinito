@@ -1,14 +1,12 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
+// Components
+import SEO from "../components/seo";
 
 // Containers
 import PageBody from '../containers/PageBody';
-
-import SEO from "../components/seo"
-import Layout from "../components/Layout"
-
-import containerStyles from "./index.module.css"
+import Layout from "../components/Layout";
 
 class BlogIndex extends React.Component {
   render() {
@@ -18,7 +16,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="Page Index" />
         <PageBody posts={posts} />
       </Layout>
     )
