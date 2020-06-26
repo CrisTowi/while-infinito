@@ -1,0 +1,23 @@
+.tag {
+  background-color: #75BFA634;
+  border-radius: 18px;
+  border: 1px solid #75BFA6;
+  cursor: pointer;
+  padding: 4px 10px;
+}
+
+.tag p {
+  margin: 0px;
+  color: #8D8D8D;
+}
+
+.tag span {
+  color: #75BFA6;
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.tag:not(:last-child) {
+  margin-right: 20px;
+}

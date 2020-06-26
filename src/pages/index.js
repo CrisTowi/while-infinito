@@ -1,10 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
+
+// Containers
+import PageBody from '../containers/PageBody';
+
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import Layout from "../components/Layout"
 
 import containerStyles from "./index.module.css"
 
@@ -18,32 +20,8 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Todas las publicaciones" />
-        <Bio />
-        <section className={containerStyles.postContainer}>
-          {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
-            return (
-              <article className={containerStyles.post} key={node.fields.slug}>
-                <Link to={node.fields.slug} style={{
-                    boxShadow: 'none',
-                    textDecoration: 'none' }}>
-                  <h3 className={containerStyles.postTitle}>
-                    {title}
-                  </h3>
-                  <small className={containerStyles.postDate}>
-                    {node.frontmatter.date}
-                  </small>
-                  <p className={containerStyles.postDescription}
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                    />
-                </Link>
-              </article>
-            )
-          })}
-        </section>
+        <SEO title="All posts" />
+        <PageBody posts={posts} />
       </Layout>
     )
   }

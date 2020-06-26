@@ -1,0 +1,16 @@
+.page-title {
+  font-size: 75px;
+  font-weight: 600;
+}
+
+.page-title span {
+  color: #75BFA6;
+}
+
+.page-summary {
+  text-align: left;
+  font-size: 22px;
+  width: 712px;
+  color: #181818;
+  font-weight: 200;
+}
