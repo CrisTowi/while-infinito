@@ -34,3 +34,28 @@
   font-weight: 600;
   color: #75BFA6;
 }
+
+@media screen and (max-width: 767px) {
+  .bio-pic {
+    margin-bottom: 0px;
+  }
+
+  .bio-info-container {
+    width: 100%;
+  }
+
+  .main-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio-contact  {
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .bio-contact p {
+    margin: 0px;
+  }
+}

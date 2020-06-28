@@ -21,3 +21,9 @@
   color: #75BFA6;
   font-weight: 600;
 }
+
+@media screen and (max-width: 767px) {
+  .nav-tabs-bar {
+    margin-top: 30px;
+  }
+}

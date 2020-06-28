@@ -71,3 +71,17 @@
 .secondary-info p {
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 767px) {
+  .aside-info {
+    display: none;
+  }
+
+  .entries-container {
+    width: 100%;
+  }
+
+  .secondary-info {
+    text-align: center;
+  }
+}

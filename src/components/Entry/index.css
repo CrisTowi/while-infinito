@@ -45,3 +45,9 @@
   color: #75BFA6;
   font-size: 14px;
 }
+
+@media screen and (max-width: 767px) {
+  .entry {
+    max-width: none;
+  }
+}
