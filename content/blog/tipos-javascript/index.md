@@ -1,6 +1,6 @@
 ---
 title: ¡Tipos de datos en Javascript!
-date: "2019-07-18T21:38:03.284Z"
+date: "2019-07-19T12:00:00.000Z"
 description: "¿Cuáles son los diferentes tipos de datos en Javascript como lenguaje de programación y para qué se utilizan?."
 ---
 

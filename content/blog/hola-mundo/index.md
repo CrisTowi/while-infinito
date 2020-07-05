@@ -1,6 +1,6 @@
 ---
 title: ¡Hola (de nuevo) Mundo!
-date: "2019-07-18T21:38:03.284Z"
+date: "2019-07-18T12:00:00.000Z"
 description: "Estoy de vuelta con una nueva plataforma y con muchas ganas de hacerlo mejor"
 ---
 
