@@ -32,9 +32,6 @@ const Entries = ({ posts }) => {
               <p>I’m updating with more cool projects! Want to collaborate? Send me a tweet. (<a className="bio-link" href="https://twitter.com/Cris_Towi" target="_blank" rel="noreferrer">@Cris_Towi</a>)</p>
             </div>
             <div className="blue-divider blue-divider--right"></div>
-            <div className="info-footer">
-              WHILE INFINITO, CDMX <span>2019</span>
-            </div>
           </div>
         </div>
       </div>
