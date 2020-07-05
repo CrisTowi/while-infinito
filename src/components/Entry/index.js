@@ -15,8 +15,6 @@ const Entry = ({ node }) => {
       </Link>
       <div className="entry__date">
         <p>{node.frontmatter.date}</p>
-        <div className="entry__date__divider"></div>
-        <p>{`${5} mins read`}</p>
       </div>
       <div className="entry__summary">
         <p>{node.frontmatter.description}</p>
