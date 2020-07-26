@@ -31,6 +31,11 @@
 .project__tags {
   margin: 24px 0px;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.project__tags .tag {
+  margin-bottom: 8px;
 }
 
 .Project__a {
