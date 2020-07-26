@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 // Containers
 import Entries from '../Entries';
 import Bio from '../Bio';
+import PersonalProjects from '../PersonalProjects';
 
 // Components
 import NavTabs from '../../components/NavTabs';
@@ -25,6 +26,9 @@ const PageBody = ({ posts }) => {
       break;
     case 'bio':
       BodyComponent = Bio;
+      break;
+    case 'personalProjects':
+      BodyComponent = PersonalProjects;
       break;
     default:
       BodyComponent = Entries;

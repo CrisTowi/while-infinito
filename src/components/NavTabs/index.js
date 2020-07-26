@@ -4,7 +4,7 @@ import React from 'react';
 // Styles
 import './index.css';
 
-const PageBody = ({ onChange, active }) => {
+const NavTabs = ({ onChange, active }) => {
   return (
     <div className="nav-tabs-bar">
       <div
@@ -23,8 +23,16 @@ const PageBody = ({ onChange, active }) => {
         className={`nav-tabs-bar__item ${ active === 'bio' ? 'nav-tabs-bar__item--active' : ''}`}>
         <p>I'm Christian</p>
       </div>
+      <div
+        onKeyDown={() => onChange('personalProjects')}
+        onClick={() => onChange('personalProjects')}
+        role="button"
+        tabIndex="0"
+        className={`nav-tabs-bar__item ${ active === 'personalProjects' ? 'nav-tabs-bar__item--active' : ''}`}>
+        <p>Projects</p>
+      </div>
     </div>
   );
 };
 
-export default PageBody;
+export default NavTabs;

@@ -7,7 +7,7 @@ import './index.css';
 const Tag = ({ title }) => {
   return (
     <div className="tag">
-      <p>{title} <span>x</span></p>
+      <p>{title}</p>
     </div>
   );
 };
