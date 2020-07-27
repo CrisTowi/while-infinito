@@ -12,7 +12,7 @@ const Entries = ({ posts }) => {
   return (
     <div className='entries-container'>
       <p className='entries-count'>
-        {`${posts.length || 0} ENTRADAS`}
+        {`${posts.length || 0} POSTS`}
       </p>
       <div className="entries-info-container">
         <div className="entries-container">
